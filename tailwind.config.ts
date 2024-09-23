@@ -9,9 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        preto: "var(--black)",
+        branco: "var(--white)"
       },
+      fontSize: {
+        large: "36px",
+        medium: "24px",
+        default: "16px"
+      },
+      fontFamily: {
+        karla: "var(--karla)"
+      },
+      // Media
+      // screens: {
+      //   "2lg": "1920px"
+      // },
     },
   },
   plugins: [],
