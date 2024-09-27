@@ -1,3 +1,4 @@
+import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
 
 interface IMenu {
@@ -12,10 +13,10 @@ export const Menu = ({op1, op2 ,op3, op4} : IMenu) => {
         <nav className="text-white shadow-xl bg-stone-950 font-karla flex flex-wrap gap-3 items-center justify-between fixed w-full p-2">
             <h1 className="font-semibold">Dragãozinho</h1>
             <div className="flex gap-2">
-                <p>{op1}</p>
-                <p>{op2}</p>
-                <p>{op3}</p>
-                <p>{op4}</p>
+                <Link href={ROUTES.home} className="cursor-pointer hover:text-neutral-300">{op1}</Link>
+                <Link href={ROUTES.maths} className="cursor-pointer hover:text-neutral-300">{op2}</Link>
+                <p className="cursor-pointer hover:text-neutral-300">{op3}</p>
+                <p className="cursor-pointer hover:text-neutral-300">{op4}</p>
             </div>
         </nav>
     )

@@ -35,10 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${karla.variable} antialiased`}>
+      <body className={`${karla.variable} antialiased bg-neutral-200`}>
         <Menu
-          op1="Index"
-          op2="Config"
+          op1="Home"
+          op2="Math"
           op3="Loja"
           op4="Mais"
         />
