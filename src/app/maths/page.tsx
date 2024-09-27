@@ -63,11 +63,11 @@ const Maths:React.FC = () => {
                 <h1>Use client com controle de estado</h1>
                 <div className="flex flex-col items-center">
                     <label htmlFor="n1">Número 1</label>
-                    <input className="text-black" id="n1" type="text" value={num1} onChange={(e) => setNum1(e.target.value)}/>
+                    <input className="border-solid border-2 border-black rounded-md p-1 w-96 text-black text-end" id="n1" type="text" value={num1} onChange={(e) => setNum1(e.target.value)}/>
                 </div>
                 <div className="flex flex-col items-center">
                     <label htmlFor="n2">Número 2</label>
-                    <input className="text-black" id="n2" type="text" value={num2} onChange={(e) => setNum2(e.target.value)}/>
+                    <input className="border-solid border-2 border-black rounded-md p-1 w-96 text-black text-end" id="n2" type="text" value={num2} onChange={(e) => setNum2(e.target.value)}/>
                 </div>
                 <div className="flex flex-row justify-center items-center gap-2 mt-4 flex-wrap">
                     <button className="border rounded-md p-1 hover:bg-neutral-600 w-28" onClick={handleSoma}>SOMAR</button>
