@@ -20,6 +20,9 @@ const config: Config = {
       fontFamily: {
         karla: "var(--karla)"
       },
+      backgroundImage: {
+        'radial-custom': 'radial-gradient(circle, rgba(80, 80, 80, 1) 0%, rgba(0, 0, 0, 1) 100%)',
+      },
       // Media
       // screens: {
       //   "2lg": "1920px"
