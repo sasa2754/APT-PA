@@ -35,12 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${karla.variable} antialiased bg-radial-custom bg-scroll`}>
+      <body className={`${karla.variable} antialiased bg-radial-custom bg-scroll overflow-x-hidden`}>
         <Menu
           op1="Home"
           op2="Math"
           op3="Cards"
           op4="Calc2"
+          op5="Fetch"
+          op6="Axios"
+          op7="server"
         />
 
         {children}
