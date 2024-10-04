@@ -34,7 +34,7 @@ const FetchPage = () => {
 
     return (
         <div className="flex items-center justify-center h-screen w-screen flex-col text-white p-5">
-            <div className="text-white font-karla bg-neutral-800 flex flex-row flex-wrap max-w-screen gap-5 items-center justify-center max-h-screen">
+            <div className="text-white font-karla flex flex-row flex-wrap max-w-screen gap-5 items-center justify-center max-h-screen">
                 <br /><br />
                 <h1>Fetch Nativo sla oq</h1>
                 <div className="flex flex-row gap-5 flex-wrap items-center justify-center">
@@ -44,7 +44,6 @@ const FetchPage = () => {
                         )
                     })}
                 </div>
-                
             </div>
         </div>
     )

@@ -16,6 +16,10 @@ interface IData {
     type: string,
 }
 
+interface IDataStaticIndex {
+    results: IData[];
+}
+
 const Person = async ({params: {id}} : IPerson) => {
     const res = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
     const data: IData = await res.json()
@@ -32,3 +36,9 @@ const Person = async ({params: {id}} : IPerson) => {
 }
 
 export default Person;
+
+export async function generateStaticParams() {
+    const res = await fetch(`https://rickandmortyapi.com/api/character`)
+    const data: IDataStaticIndex = await res.json();
+    return data.results.map((item) => item.id.toString());
+}
